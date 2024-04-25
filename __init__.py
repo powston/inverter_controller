@@ -68,7 +68,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         mqtt_host = entry.data["host"]
         mqtt_port = entry.data["port"]
         client_external.connect(mqtt_host, mqtt_port)
-        client_external.on_disconnect = 
+        client_external.on_disconnect = on_disconnect
         client_external.loop_start()
 
     except Exception as e:
