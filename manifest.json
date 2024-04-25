@@ -1,0 +1,17 @@
+{
+  "domain": "powston",
+  "name": "inverter_controller",
+  "version": "0.0.1",
+  "codeowners": [
+    "@powston"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.powston.com/homeassistant",
+  "iot_class": "cloud_polling",
+  "requirements": [
+    "paho-mqtt==1.6.1"
+  ],
+  "ssdp": [],
+  "zeroconf": []
+}
